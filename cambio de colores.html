@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Editor</title>
+    <style>
+      body {
+        transition: background-color 0.5s ease;
+      }
+
+      .colores {
+        background-color: black;
+        height: 40px;
+        width: 220px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        border: 2px solid white;
+      }
+
+      .botones {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border-color: azure;
+        margin: 5px;
+      }
+
+      #rojo {
+        background: red;
+      }
+      #verde {
+        background: green;
+      }
+      #amarillo {
+        background: yellow;
+      }
+      #azul {
+        background: blue;
+      }
+      #naranja {
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="colores">
+      <button id="rojo" class="botones"></button>
+      <button id="verde" class="botones"></button>
+      <button id="amarillo" class="botones"></button>
+      <button id="azul" class="botones"></button>
+      <button id="naranja" class="botones"></button>
+    </div>
+    <script>
+      document.getElementById("rojo").addEventListener("click", function () {
+        document.body.style.backgroundColor = "red";
+      });
+      document.getElementById("verde").addEventListener("click", function () {
+        document.body.style.backgroundColor = "green";
+      });
+      document
+        .getElementById("amarillo")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "yellow";
+        });
+      document.getElementById("azul").addEventListener("click", function () {
+        document.body.style.backgroundColor = "blue";
+      });
+      document.getElementById("naranja").addEventListener("click", function () {
+        document.body.style.backgroundColor = "orange";
+      });
+    </script>
+  </body>
+</html>
